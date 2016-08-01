@@ -30,11 +30,12 @@ class Round extends EventEmitter {
       }
 
       if (this.roulette.shot()) {
+        this.players[next].emit('opponent_turn', isRotate);
+
         this.turn(next);
         return;
       }
 
-      this.players[next].emit('opponent_turn', isRotate);
       this.emit('win', next);
     });
 
