@@ -1,9 +1,11 @@
+const config = require('./config');
+
 class Roulette {
   constructor() {
     this.position = 0;
 
     do {
-      this.length = Math.floor(Math.random() * 10000);
+      this.length = Math.floor(Math.random() * config.maxLength);
       this.bullets = Math.floor(Math.random() * this.length / 2) - 1;
     } while(this.length < 6 || this.bullets < 1);
 
