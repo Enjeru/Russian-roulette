@@ -2,17 +2,17 @@
 
 This project makes possible to run bots fights of russian roulette.
 
-The main purpose of each bot is surviving in this old game. But this is unusual roulette, here we can have 6 - 1000, and it has 1 - half of length bullets that are arranged in succession.
+The main purpose of each bot is surviving in this old game. But this is unusual roulette, here we can have 6 - 1000 bullet slots, and it has 1 - half of slots bullets that are arranged in succession.
 
-What you need to do to start this game is just write your own bot which is implement our API and put it to your-bot folder.
+What you need to do to start this game is just write your own bot which is implement our API and put it to `your-bot` folder.
 
-Then we will put our bot to our-bot folder and just run server/index.js file. In the end of battle: server will show score.
+Then we will put our bot to `our-bot` folder and just run server/index.js file. In the end of battle: server will show score.
 
 API:
 
-You can see some examples of bot implementation in our-bot and your-bot folders.
+You can see some examples of bot implementation in `our-bot` and `your-bot` folders.
 
-For start you just need to run npm install.
+For start you just need to run `npm install`.
 Then you need to create socket.io-client instance and connect to http://localhost:8080
 Then you can recieve one of this events:
 
@@ -24,4 +24,4 @@ your_turn - yeah, great! If you got this event it means that it is time to make 
 
 We will run about 10000 times with different revolver config in every round first bot's turn will be chosen randomly.
 
-Have fun and be free!
+Have fun and be free! Let the best bot win.
